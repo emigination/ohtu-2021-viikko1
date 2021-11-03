@@ -70,6 +70,6 @@ class TestVarasto(unittest.TestCase):
         self.varasto.ota_varastosta(-1)
         self.assertEqual(self.varasto.saldo, 2)
 
-    def test_merkkijono_oikein(self):
+    def test_merkkijono_luodaan_oikein(self):
         merkkijono = str(self.varasto)
         self.assertEqual(merkkijono, 'saldo = 0, vielä tilaa 10')
